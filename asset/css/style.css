@@ -8,7 +8,15 @@ body header {
     opacity: 0.9;
     min-height: 130px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    position: fixed;
+    top: 0 !important; }
+  body header .logo {
+    color: white !important; }
+    body header .logo span {
+      color: #4BCAFF; }
+  body header div ul li a {
+    color: white !important; }
   body header .titre_principal {
     display: flex;
     align-items: center;

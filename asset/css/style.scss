@@ -17,6 +17,31 @@ body{
             min-height: 130px;
             display: flex;
             align-items: center;
+            position: fixed;
+            top: 0!important;
+        }
+
+        .logo{
+
+            color: white!important;
+
+            span{
+
+                color: #4BCAFF;
+            }
+        }
+        
+        div {
+
+            ul{
+
+                li{
+
+                    a{
+                        color: white!important;
+                    }
+                }
+            }
         }
         .titre_principal{
 
