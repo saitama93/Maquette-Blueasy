@@ -1,5 +1,22 @@
+/*  ######  FONT  ######  */
+@font-face {
+  font-family: 'Segeo UI';
+  src: url("../font/Segoe UI.woff"); }
+@font-face {
+  font-family: 'Segeo UI';
+  src: url("../font/Segoe UI Bold.woff"); }
+@font-face {
+  font-family: 'Segeo UI';
+  src: url("../font/Segoe UI Bold Italic.woff"); }
+@font-face {
+  font-family: 'Segeo UI';
+  src: url("../font/Segoe UI Italic.woff"); }
+@font-face {
+  font-family: 'Segeo UI';
+  src: url("../font/Segoe UI Light.woff"); }
 body {
-  /*  ######  SECTION SERVICES  ######  */ }
+  /*  ######  SECTION SERVICES  ######  */
+  /*  ######  SECTION PORTFOLIO  ######  */ }
   body header {
     background-image: url("../image/background_header.jpg");
     background-repeat: no-repeat;
@@ -51,6 +68,7 @@ body {
   body #services {
     background-color: #4BCAFF;
     color: white;
+    min-height: 405px;
     padding-top: 78px;
     padding-bottom: 78px; }
     body #services p {
@@ -63,10 +81,12 @@ body {
       font-size: 24px;
       font-weight: 500;
       padding-top: 20px; }
+    body #services #fleche {
+      vertical-align: top;
+      padding-bottom: 34px; }
     body #services h2 {
       font-size: 30px;
       font-weight: 300;
-      font-family: 'Segoe UI', sans-serif;
-      padding-bottom: 34px; }
+      font-family: 'Segoe UI', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,34 @@
+/*  ######  FONT  ######  */
 
+@font-face{
 
+    font-family: 'Segeo UI';
+    src: url("../font/Segoe\ UI.woff");
+}
+
+@font-face{
+
+    font-family: 'Segeo UI';
+    src: url("../font/Segoe\ UI\ Bold.woff");
+}
+
+@font-face{
+
+    font-family: 'Segeo UI';
+    src: url("../font/Segoe\ UI\ Bold\ Italic.woff");
+}
+
+@font-face{
+
+    font-family: 'Segeo UI';
+    src: url("../font/Segoe\ UI\ Italic.woff");
+}
+
+@font-face{
+
+    font-family: 'Segeo UI';
+    src: url("../font/Segoe\ UI\ Light.woff");
+}
 
 
 body{
@@ -90,6 +119,7 @@ body{
 
         background-color: #4BCAFF;
         color: white;
+        min-height: 405px;
         padding-top: 78px;
         padding-bottom: 78px;
 
@@ -106,14 +136,22 @@ body{
             padding-top: 20px;
         }
 
-        
+        #fleche{
+            vertical-align: top;
+            padding-bottom: 34px;
+        }
 
         h2{
 
             font-size: 30px;
             font-weight: 300;
             font-family: 'Segoe UI', sans-serif;
-            padding-bottom: 34px;
+           
         }
     }
+
+    /*  ######  SECTION PORTFOLIO  ######  */
+
+
+
 }
