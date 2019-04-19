@@ -1,3 +1,32 @@
-
+body header {
+  background-image: url("../image/background_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  body header #header_content {
+    background-image: url("../image/hoverBackground_header.png");
+    opacity: 0.9;
+    min-height: 130px;
+    display: flex;
+    align-items: center; }
+  body header .titre_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+    padding-top: 240px; }
+    body header .titre_principal h1 {
+      font-size: 42px;
+      font-weight: lighter;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 140px; }
+      body header .titre_principal h1 span {
+        background-color: #3B454D;
+        padding: 5px 15px; }
 
 /*# sourceMappingURL=style.css.map */
