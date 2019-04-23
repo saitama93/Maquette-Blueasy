@@ -124,7 +124,7 @@ body {
     body #feature .container .test:first-child {
       margin-bottom: 30px !important; }
   @media (max-width: 575px) {
-    body ul li a {
+    body #features ul li a {
       font-size: 10px; } }
   body #default {
     background-color: #515f67;

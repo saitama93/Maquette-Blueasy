@@ -258,13 +258,16 @@ body{
 
     @include for-extra-small-devices {
 
-        ul{
+        #features{
+        
+            ul{
 
-            li{
+                li{
 
-                a{
+                    a{
 
-                    font-size: 10px;
+                        font-size: 10px;
+                    }
                 }
             }
         }
