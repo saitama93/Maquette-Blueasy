@@ -30,6 +30,31 @@
     src: url("../font/Segoe\ UI\ Light.woff");
 }
 
+/*  ###### MIXIN  ######  */
+
+@mixin for-extra-small-devices {
+           
+    @media (max-width: 575px) { @content; }       
+}
+
+@mixin for-small-devices {
+
+    @media (min-width: 576px) and (max-width: 767px) { @content; }
+    }
+    
+    @mixin for-medium-devices {
+
+    @media (min-width: 768px) and (max-width: 991px) { @content; }
+    }
+    
+    @mixin for-large-devices {
+
+    @media (min-width: 992px) and (max-width: 1199px) { @content; }
+    }
+
+/*  ######  VARIABLES  ######  */
+
+$breadcrumb-divider: quote("|");
 
 body{
     header{
@@ -40,12 +65,17 @@ body{
         height: 100vh;
         font-family: 'Segoe UI', sans-serif;
 
-        h2{
+        // h2{
 
-            font-family: 'Segoe UI' ,sans-serif;
-            font-size: 30px;
-            font-weight: 300;
-        }
+        //     font-family: 'Segoe UI' ,sans-serif;
+        //     font-size: 30px;
+        //     font-weight: 300;
+
+        // }
+
+        
+
+       
 
         #header_content{
 
@@ -117,6 +147,13 @@ body{
                     padding: 5px 15px;
                 }
             }
+
+            @include for-extra-small-devices {
+
+                h1{
+                    font-size: 30px;
+                }
+            }
         }
         
     }
@@ -167,6 +204,12 @@ body{
 
         .container{
 
+            .galerie_1{
+
+                padding-bottom: 30px;
+            }
+            
+
             #features_nav{
 
                 display: flex;
@@ -185,6 +228,7 @@ body{
 
                 ul{
 
+
                     li{
 
                         a{
@@ -202,11 +246,26 @@ body{
                         }
                     }
                 }
+
             }
 
             .test:first-child{
 
                 margin-bottom:  30px!important;
+            }
+        }
+    }
+
+    @include for-extra-small-devices {
+
+        ul{
+
+            li{
+
+                a{
+
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -366,6 +425,14 @@ body{
                 display: flex;
                 justify-content: space-between;
 
+                h2{
+
+                    font-family: 'Segoe UI', sans-serif;
+                    font-weight: 300;
+                    font-size: 30px;
+
+                }
+
             }
 
             p{
@@ -383,5 +450,99 @@ body{
             }
         }
     }
+
+    /* ######  SECTION CONTACT  ######  */
+
+    #contact{
+
+        background-image: url(../image/background_contact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 78px 0;
+        color: white;
+
+        .container{
+
+            input{
+
+                height: 50px;
+                width: 100%;
+                background-color: transparent;
+                border-color: white;
+            }
+
+            #btn_envoi{
+
+                padding-top: 40px;
+
+                #envoi{
+
+                    background-color: #4BCAFF;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+
+            textarea{
+
+                width: 100%;
+                background-color: transparent;
+                border-color: white;
+            }
+
+            p, ul{
+
+                font-family: 'Segoe UI Semibold', sans-serif;
+                font-size: 14px;
+                padding-top: 25px;
+                list-style: none;
+            }
+
+            ul{
+
+                padding-left: 0;
+
+                
+            }
+        }
+    }
+
+    /* ######  SECTION FOOTER  ######  */
+
+    // footer{
+
+    //     background-color: rgb(40, 40, 40);
+    //     color: rgb(75, 88, 96);
+
+    //     div{
+
+    //         display: flex;
+    //         justify-content: space-between;
+
+    //         ol{
+
+    //             li:nth-child(2)::before,
+    //             li:nth-child(3)::before,
+    //             li:nth-child(4)::before {
+    //                 content: $breadcrumb-divider;
+    //             }
+
+    //             display: flex;
+    //             justify-content: space-between;
+
+    //             li{
+
+    //                 list-style: none;
+                    
+
+    //                 a{
+
+    //                     color: rgb(75, 88, 96);
+                        
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
 }
