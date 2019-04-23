@@ -304,7 +304,84 @@ body{
         background-size: cover;
         min-height: 505px;
         color: white;
+        padding: 109px 0 177px 0;
+
+        .container{
+
+            #john_titre{
+
+                h2{
+
+                    font-family: 'Segoe UI', sans-serif;
+                    font-size: 30px;
+                    font-weight: 300;
+                }
+            }
+
+            .row{
+
+                .content_reseaux{
+
+                    p{
+
+                        font-family: 'Segoe UI', sans-serif;
+                        font-size: 14px;
+                        margin-bottom: 35px;
+                    }
+                    ul{
+
+                        display: flex;
+                        justify-content: space-between;
+                        width:  55%;
+                        padding-left:  0;
+
+                        li{
+
+                            list-style: none;
+                            a{
+
+                                color: white;
+                                border: solid 1px white;
+                                padding: 15px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* ######  SECTION TESTIMONIALS  ######  */
+
+    #testimonials{
+
         padding: 78px 0;
+
+        .container{
+
+            #titre_testimonials{
+
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            p{
+
+                font-family: 'Segoe UI', sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+            }
+
+            span{
+                
+                color: #4BCAFF;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
     }
 
 }

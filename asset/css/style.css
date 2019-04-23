@@ -19,7 +19,8 @@ body {
   /*  ######  SECTION PORTFOLIO  ######  */
   /*  ######  SECTION DEFAULT  ######  */
   /*  ######  SECTION TWITTER  ######  */
-  /* ######  SECTION JOHN DOE  ######  */ }
+  /* ######  SECTION JOHN DOE  ######  */
+  /* ######  SECTION TESTIMONIALS  ######  */ }
   body header {
     background-image: url("../image/background_header.jpg");
     background-repeat: no-repeat;
@@ -166,6 +167,38 @@ body {
     background-size: cover;
     min-height: 505px;
     color: white;
+    padding: 109px 0 177px 0; }
+    body #johnDoe .container #john_titre h2 {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 30px;
+      font-weight: 300; }
+    body #johnDoe .container .row .content_reseaux p {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 14px;
+      margin-bottom: 35px; }
+    body #johnDoe .container .row .content_reseaux ul {
+      display: flex;
+      justify-content: space-between;
+      width: 55%;
+      padding-left: 0; }
+      body #johnDoe .container .row .content_reseaux ul li {
+        list-style: none; }
+        body #johnDoe .container .row .content_reseaux ul li a {
+          color: white;
+          border: solid 1px white;
+          padding: 15px; }
+  body #testimonials {
     padding: 78px 0; }
+    body #testimonials .container #titre_testimonials {
+      display: flex;
+      justify-content: space-between; }
+    body #testimonials .container p {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 28px;
+      font-weight: 300; }
+    body #testimonials .container span {
+      color: #4BCAFF;
+      font-size: 14px;
+      font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
