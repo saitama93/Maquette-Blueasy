@@ -16,13 +16,20 @@
   src: url("../font/Segoe UI Light.woff"); }
 body {
   /*  ######  SECTION SERVICES  ######  */
-  /*  ######  SECTION PORTFOLIO  ######  */ }
+  /*  ######  SECTION PORTFOLIO  ######  */
+  /*  ######  SECTION DEFAULT  ######  */
+  /*  ######  SECTION TWITTER  ######  */
+  /* ######  SECTION JOHN DOE  ######  */ }
   body header {
     background-image: url("../image/background_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     font-family: 'Segoe UI', sans-serif; }
+    body header h2 {
+      font-family: 'Segoe UI' ,sans-serif;
+      font-size: 30px;
+      font-weight: 300; }
     body header #header_content {
       background-image: url("../image/hoverBackground_header.png");
       opacity: 0.9;
@@ -30,7 +37,8 @@ body {
       display: flex;
       align-items: center;
       position: fixed;
-      top: 0 !important; }
+      top: 0 !important;
+      z-index: 100 !important; }
     body header .logo {
       color: white !important;
       font-size: 30px;
@@ -88,5 +96,76 @@ body {
       font-size: 30px;
       font-weight: 300;
       font-family: 'Segoe UI', sans-serif; }
+  body #feature {
+    padding: 78px 0; }
+    body #feature .container #features_nav {
+      display: flex;
+      justify-content: space-between; }
+      body #feature .container #features_nav #features_titre hr {
+        width: 30%;
+        border: 1px solid black;
+        margin-top: 0;
+        margin-left: 0; }
+      body #feature .container #features_nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 700;
+        border: solid 1px transparent; }
+      body #feature .container #features_nav ul li a:hover {
+        border: 1px solid #4BCAFF;
+        color: #4BCAFF !important; }
+    body #feature .container .test:first-child {
+      margin-bottom: 30px !important; }
+  body #default {
+    background-color: #515f67;
+    padding: 78px 0;
+    color: white; }
+    body #default p {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 14px; }
+    body #default h2 {
+      font-family: 'Segoe UI' ,sans-serif;
+      font-size: 30px;
+      font-weight: 300; }
+    body #default hr {
+      width: 9%;
+      border: 1px solid white;
+      margin-top: 0;
+      margin-left: 0; }
+    body #default .boutton {
+      color: black;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 14px;
+      border-color: black; }
+  body #twitter {
+    background-color: #4BCAFF;
+    height: 309px;
+    padding: 78px 0;
+    color: white; }
+    body #twitter .container p {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 28px;
+      font-weight: 300; }
+    body #twitter .container #twitter_nav {
+      display: flex;
+      justify-content: space-between; }
+      body #twitter .container #twitter_nav h2 {
+        font-family: 'Segoe UI' ,sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        color: white; }
+      body #twitter .container #twitter_nav hr {
+        width: 40%;
+        border: 1px solid white;
+        margin-top: 0;
+        margin-left: 0; }
+  body #johnDoe {
+    background-image: url(../image/background_photographe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 505px;
+    color: white;
+    padding: 78px 0; }
 
 /*# sourceMappingURL=style.css.map */

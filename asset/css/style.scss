@@ -40,6 +40,13 @@ body{
         height: 100vh;
         font-family: 'Segoe UI', sans-serif;
 
+        h2{
+
+            font-family: 'Segoe UI' ,sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+        }
+
         #header_content{
 
             background-image: url("../image/hoverBackground_header.png");
@@ -49,6 +56,7 @@ body{
             align-items: center;
             position: fixed;
             top: 0!important;
+            z-index: 100!important;
         }
 
         .logo{
@@ -153,5 +161,150 @@ body{
     /*  ######  SECTION PORTFOLIO  ######  */
 
 
+    #feature{
+
+        padding:  78px 0;
+
+        .container{
+
+            #features_nav{
+
+                display: flex;
+                justify-content: space-between;
+
+                #features_titre{
+
+                    hr{
+
+                        width: 30%;
+                        border: 1px solid black;
+                        margin-top: 0;
+                        margin-left: 0;
+                    }
+                }
+
+                ul{
+
+                    li{
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 14px;
+                            font-weight: 700;
+                            border: solid 1px transparent;
+                        }
+
+                        a:hover{
+
+                            border: 1px solid #4BCAFF;
+                            color: #4BCAFF!important;
+                        }
+                    }
+                }
+            }
+
+            .test:first-child{
+
+                margin-bottom:  30px!important;
+            }
+        }
+    }
+
+
+    /*  ######  SECTION DEFAULT  ######  */
+
+    #default{
+
+        background-color: rgb(81, 95, 103);
+        padding: 78px 0;
+        color: white;
+
+        p{
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 14px;
+            
+        }
+
+        h2{
+
+            font-family: 'Segoe UI' ,sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+        }
+        
+        hr{
+
+            width: 9%;
+            border: 1px solid white;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .boutton{
+
+            color: black;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 14px;
+            border-color: black;
+        }
+    }
+
+
+    /*  ######  SECTION TWITTER  ######  */
+
+    #twitter{
+
+        background-color: #4BCAFF;
+        height: 309px;
+        padding: 78px 0;
+        color: white;
+
+        .container{
+
+            p{
+
+                font-family: 'Segoe UI', sans-serif;
+                font-size: 28px;
+                font-weight: 300;
+            }
+
+            #twitter_nav{
+
+                display: flex;
+                justify-content: space-between;
+                
+
+                h2{
+
+                    font-family: 'Segoe UI' ,sans-serif;
+                    font-size: 30px;
+                    font-weight: 300;
+                    color: white;
+                }
+
+
+                hr{
+                    
+                    width: 40%;
+                    border: 1px solid white;
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    /* ######  SECTION JOHN DOE  ######  */
+
+    #johnDoe{
+
+        background-image: url(../image/background_photographe.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 505px;
+        color: white;
+        padding: 78px 0;
+    }
 
 }
