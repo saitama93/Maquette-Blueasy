@@ -104,6 +104,27 @@ body {
     padding: 78px 0; }
     body #feature .container .galerie_1 {
       padding-bottom: 30px; }
+    @media (max-width: 575px) {
+      body #feature .container .galerie_1 div {
+        padding: 12px 0;
+        text-align: center; }
+      body #feature .container .galerie_2 div {
+        padding: 12px 0;
+        text-align: center; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body #feature .container .galerie_1 div {
+        padding: 12px 0;
+        text-align: center; }
+      body #feature .container .galerie_2 div {
+        padding: 12px 0;
+        text-align: center; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body #feature .container .galerie_1 div {
+        padding: 12px 0;
+        text-align: center; }
+      body #feature .container .galerie_2 div {
+        padding: 12px 0;
+        text-align: center; } }
     body #feature .container #features_nav {
       display: flex;
       justify-content: space-between; }
@@ -121,6 +142,10 @@ body {
       body #feature .container #features_nav ul li a:hover {
         border: 1px solid #4BCAFF;
         color: #4BCAFF !important; }
+    @media (max-width: 575px) {
+      body #feature .container #features_nav {
+        display: flex;
+        flex-direction: column; } }
     body #feature .container .test:first-child {
       margin-bottom: 30px !important; }
   @media (max-width: 575px) {
@@ -147,6 +172,12 @@ body {
       font-family: 'Segoe UI', sans-serif;
       font-size: 14px;
       border-color: black; }
+    @media (max-width: 575px) {
+      body #default .container .row #default_content button {
+        margin-bottom: 10px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body #default .container .row .video {
+        margin-top: 25px; } }
   body #twitter {
     background-color: #4BCAFF;
     height: 309px;
@@ -156,6 +187,9 @@ body {
       font-family: 'Segoe UI', sans-serif;
       font-size: 28px;
       font-weight: 300; }
+    @media (max-width: 575px) {
+      body #twitter .container p {
+        font-size: 20px; } }
     body #twitter .container #twitter_nav {
       display: flex;
       justify-content: space-between; }
@@ -208,6 +242,9 @@ body {
       font-family: 'Segoe UI', sans-serif;
       font-size: 28px;
       font-weight: 300; }
+    @media (max-width: 575px) {
+      body #testimonials .container p {
+        font-size: 20px; } }
     body #testimonials .container span {
       color: #4BCAFF;
       font-size: 14px;
@@ -240,5 +277,14 @@ body {
       list-style: none; }
     body #contact .container ul {
       padding-left: 0; }
+    @media (max-width: 575px) {
+      body #contact .container p, body #contact .container ul {
+        display: none; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body #contact .container p, body #contact .container ul {
+        display: none; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      body #contact .container p, body #contact .container ul {
+        display: none; } }
 
 /*# sourceMappingURL=style.css.map */
