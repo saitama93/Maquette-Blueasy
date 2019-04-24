@@ -16,6 +16,10 @@
   src: url("../font/Segoe UI Light.woff"); }
 /*  ###### MIXIN  ######  */
 /*  ######  VARIABLES  ######  */
+/*  ######  MESSAGE D'ERREUR FORMULAIRE  ######  */
+#errorName, #errorMail, #errorMessage, #errorSubmit {
+  color: red; }
+
 body {
   /*  ######  SECTION SERVICES  ######  */
   /*  ######  SECTION PORTFOLIO  ######  */
@@ -54,6 +58,9 @@ body {
     body header div ul li a:hover {
       border: 1px solid #4BCAFF;
       color: #4BCAFF !important; }
+    body header div ul li .active {
+      border: 1px solid #4BCAFF;
+      color: #4BCAFF !important; }
     body header .titre_principal {
       display: flex;
       align-items: center;
@@ -76,7 +83,24 @@ body {
           padding: 5px 15px; }
       @media (max-width: 575px) {
         body header .titre_principal h1 {
-          font-size: 30px; } }
+          font-size: 30px; }
+          body header .titre_principal h1 span {
+            margin: 15px 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body header .titre_principal h1 {
+          font-size: 30px; }
+          body header .titre_principal h1 span {
+            margin: 15px 0; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body header .titre_principal h1 {
+          font-size: 30px; }
+          body header .titre_principal h1 span {
+            margin: 15px 0; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body header .titre_principal h1 {
+          font-size: 30px; }
+          body header .titre_principal h1 span {
+            margin: 15px 0; } }
   body #services {
     background-color: #4BCAFF;
     color: white;
@@ -96,6 +120,12 @@ body {
     body #services #fleche {
       vertical-align: top;
       padding-bottom: 34px; }
+    @media (max-width: 575px) {
+      body #services #fleche {
+        display: none; }
+      body #services h2 {
+        font-size: 25px;
+        padding-bottom: 15px; } }
     body #services h2 {
       font-size: 30px;
       font-weight: 300;
@@ -133,6 +163,9 @@ body {
         border: 1px solid black;
         margin-top: 0;
         margin-left: 0; }
+      @media (max-width: 575px) {
+        body #feature .container #features_nav #features_titre hr {
+          display: none; } }
       body #feature .container #features_nav ul li a {
         text-decoration: none;
         color: black;
@@ -142,6 +175,9 @@ body {
       body #feature .container #features_nav ul li a:hover {
         border: 1px solid #4BCAFF;
         color: #4BCAFF !important; }
+      @media (max-width: 575px) {
+        body #feature .container #features_nav ul li a {
+          font-size: 10px; } }
     @media (max-width: 575px) {
       body #feature .container #features_nav {
         display: flex;
@@ -162,6 +198,12 @@ body {
       font-family: 'Segoe UI' ,sans-serif;
       font-size: 30px;
       font-weight: 300; }
+    @media (max-width: 575px) {
+      body #default h2 {
+        font-size: 25px;
+        padding-bottom: 15px; }
+      body #default hr {
+        display: none; } }
     body #default hr {
       width: 9%;
       border: 1px solid white;
@@ -203,6 +245,11 @@ body {
         border: 1px solid white;
         margin-top: 0;
         margin-left: 0; }
+      @media (max-width: 575px) {
+        body #twitter .container #twitter_nav hr {
+          display: none; }
+        body #twitter .container #twitter_nav h2 {
+          font-size: 25px; } }
   body #johnDoe {
     background-image: url(../image/background_photographe.jpg);
     background-repeat: no-repeat;
@@ -227,8 +274,15 @@ body {
         list-style: none; }
         body #johnDoe .container .row .content_reseaux ul li a {
           color: white;
-          border: solid 1px white;
+          border: solid 1px white !important;
+          border: solid 1px transparent;
           padding: 15px; }
+        body #johnDoe .container .row .content_reseaux ul li a:hover {
+          border: 1px solid #4BCAFF;
+          color: #4BCAFF !important; }
+    @media (max-width: 575px) {
+      body #johnDoe .container .row .content_reseaux ul {
+        width: 100%; } }
   body #testimonials {
     padding: 78px 0; }
     body #testimonials .container #titre_testimonials {
@@ -255,6 +309,10 @@ body {
     background-size: cover;
     padding: 78px 0;
     color: white; }
+    body #contact h2 {
+      font-size: 30px;
+      font-weight: 300;
+      font-family: 'Segoe UI', sans-serif; }
     body #contact .container input {
       height: 50px;
       width: 100%;

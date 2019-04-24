@@ -14,7 +14,7 @@
     <title>BLUEASY</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" >
     
     <header class="container-fluid pl-0 pr-0">
 
@@ -33,7 +33,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="#header_content">HOME <span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item">
@@ -41,7 +41,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
+                            <a class="nav-link" href="#default">FEATURES</a>
                         </li>
 
                         <li class="nav-item">
@@ -74,7 +74,7 @@
 
             <div class="row">
 
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
 
                     <img src="asset/image/logo_coffee.png" alt="logo d'un café" height="48" width="34">
                 
@@ -86,7 +86,7 @@
                     </p>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
 
                     <img src="asset/image/logo_instant.png" alt="logo d'imprimante" width="48" height="48">
 
@@ -98,7 +98,7 @@
                     </p>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
 
                     <img src="asset/image/logo_serious.png" alt="logo d'un appareil photo" height="45" width="47">
 
@@ -109,7 +109,7 @@
                         Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.
                     </p>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
 
                     <img src="asset/image/logo_frame.png" alt="logo de je ne sais pas quoi" height="48" width="48">
 
@@ -138,7 +138,7 @@
                     <hr>
                 </div>
 
-                <ul class="nav justify-content-end">
+                <ul class="nav justify-content-end ">
                     
                     <li class="nav-item">
                             
@@ -327,7 +327,7 @@
         </div>
     </section>
 
-    <!-- ######  SECTION DEFAULT  ###### -->
+    <!-- ######  SECTION CONTACT  ###### -->
 
     <section id="contact" class="container-fluid">
 
@@ -344,7 +344,8 @@
                         <div class="col-12 col-md-12 col-lg-5">
                             
                             <label for="name">FULL NAME</label><br>
-                            <input type="text" id="name">
+                            <input type="text" id="fullName">
+                            <span id="errorName"></span>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 offset-1 col-lg-6">
 
@@ -363,6 +364,7 @@
 
                             <label for="mail">EMAIL</label><br>
                             <input type="email" id="mail">
+                            <span id="errorMail"></span>
                         </div>
                         <div class="col-12 col-md-12 col-lg-6 offset-1 col-lg-6">
 
@@ -382,11 +384,13 @@
 
                             <label for="message">MESSAGE</label><br>
                             <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            <span id="errorMessage"></span>
                         </div>
 
-                        <div class="col-4" id="btn_envoi">
+                        <div class="col-12 col-md-4" id="btn_envoi">
 
                             <input type="submit" id="envoi" value="MESSAGE">
+                            <span id="errorSubmit"></span>
                         </div>
                     </div>
                 </div>
@@ -421,5 +425,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="asset/js/script.js"></script>
   </body>
 </html>

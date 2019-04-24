@@ -52,9 +52,17 @@
     @media (min-width: 992px) and (max-width: 1199px) { @content; }
     }
 
+   
 /*  ######  VARIABLES  ######  */
 
 $breadcrumb-divider: quote("|");
+
+/*  ######  MESSAGE D'ERREUR FORMULAIRE  ######  */
+
+#errorName, #errorMail, #errorMessage, #errorSubmit{
+
+    color: red;
+}
 
 body{
     header{
@@ -64,18 +72,6 @@ body{
         background-size: cover;
         height: 100vh;
         font-family: 'Segoe UI', sans-serif;
-
-        // h2{
-
-        //     font-family: 'Segoe UI' ,sans-serif;
-        //     font-size: 30px;
-        //     font-weight: 300;
-
-        // }
-
-        
-
-       
 
         #header_content{
 
@@ -118,6 +114,12 @@ body{
                         border: 1px solid #4BCAFF;
                         color: #4BCAFF!important;
                     }
+
+                    .active{
+
+                        border: 1px solid #4BCAFF;
+                        color: #4BCAFF!important;
+                    }
                 }
             }
         }
@@ -152,6 +154,47 @@ body{
 
                 h1{
                     font-size: 30px;
+
+                    span{
+
+                        margin: 15px 0;
+                    }
+                }
+            }
+
+            @include for-medium-devices{
+
+                h1{
+                    font-size: 30px;
+
+                    span{
+
+                        margin: 15px 0;
+                    }
+                }
+            }
+
+            @include for-small-devices{
+
+                h1{
+                    font-size: 30px;
+
+                    span{
+
+                        margin: 15px 0;
+                    }
+                }
+            }
+
+            @include for-large-devices{
+
+                h1{
+                    font-size: 30px;
+
+                    span{
+
+                        margin: 15px 0;
+                    }
                 }
             }
         }
@@ -184,6 +227,20 @@ body{
         #fleche{
             vertical-align: top;
             padding-bottom: 34px;
+        }
+
+        @include for-extra-small-devices{
+
+            #fleche{
+    
+                display: none;
+            }
+
+            h2{
+    
+                font-size: 25px;
+                padding-bottom: 15px;
+            }
         }
 
         h2{
@@ -294,6 +351,14 @@ body{
                         margin-top: 0;
                         margin-left: 0;
                     }
+
+                    @include for-extra-small-devices{
+
+                        hr{
+
+                            display: none;
+                        }
+                    }
                 }
 
                 ul{
@@ -313,6 +378,14 @@ body{
 
                             border: 1px solid #4BCAFF;
                             color: #4BCAFF!important;
+                        }
+
+                        @include for-extra-small-devices{
+
+                            a{
+
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
@@ -374,6 +447,20 @@ body{
             font-size: 30px;
             font-weight: 300;
         }
+
+        @include for-extra-small-devices(){
+
+            h2{
+
+                font-size: 25px;
+                padding-bottom: 15px;
+            }
+
+            hr{
+    
+                display: none;
+            }
+        }
         
         hr{
 
@@ -382,6 +469,7 @@ body{
             margin-top: 0;
             margin-left: 0;
         }
+
 
         .boutton{
 
@@ -472,6 +560,17 @@ body{
                     margin-top: 0;
                     margin-left: 0;
                 }
+
+                @include for-extra-small-devices{
+
+                    hr{
+            
+                        display: none;
+                    }
+                    h2{
+                        font-size: 25px;
+                    }
+                }
             }
         }
     }
@@ -522,12 +621,34 @@ body{
                             a{
 
                                 color: white;
-                                border: solid 1px white;
+                                border: solid 1px white!important;
+                                border:  solid 1px transparent;
                                 padding: 15px;
                                 
                             }
+
+                            a:hover{
+
+                                border: 1px solid #4BCAFF;
+                                color: #4BCAFF!important;
+                            }
+
+                            
+
+                            
+                        }
+
+                    }
+
+                    @include for-extra-small-devices{
+
+                        ul{
+
+                            width: 100%;
                         }
                     }
+
+                    
                 }
             }
         }
@@ -552,7 +673,6 @@ body{
                     font-family: 'Segoe UI', sans-serif;
                     font-weight: 300;
                     font-size: 30px;
-
                 }
 
             }
@@ -590,6 +710,14 @@ body{
         background-size: cover;
         padding: 78px 0;
         color: white;
+
+        h2{
+
+            font-size: 30px;
+            font-weight: 300;
+            font-family: 'Segoe UI', sans-serif;
+           
+        }
 
         .container{
 
@@ -632,7 +760,6 @@ body{
 
                 padding-left: 0;
 
-                
             }
 
             @include for-extra-small-devices{
