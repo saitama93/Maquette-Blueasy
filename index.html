@@ -37,7 +37,7 @@
     <title>BLUEASY</title>
     <meta name="description" content="Blog personnel de John Doe">
 	<meta name="author" content="ILMI AMIR Igal">
-	<meta name="keywords" content="blog John Doe">
+	<meta name="keywords" content="blog portfolio John Doe">
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50" >
@@ -48,8 +48,8 @@
 
             <nav class="container navbar navbar-expand-lg navbar-light">
 
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <a class="navbar-brand logo" href="#titre_h1">BLU<span>E</span>ASY</a>
@@ -59,6 +59,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
+
                           <a class="nav-link" href="#titre_h1">HOME <span class="sr-only">(current)</span></a>
                         </li>
 
@@ -164,47 +165,51 @@
                     <hr>
                 </div>
 
-                <ul class="nav justify-content-end ">
-                    
-                    <li class="nav-item">
-                            
-                        <a class="nav-link active" href="#">ALL</a>
-                    </li>
+                <div id="li-container">
 
-                    <li class="nav-item">
+                    <ul class="nav justify-content-end ">
+                        
+                        <li class="nav-item imag active" onclick="filterSelection('all')">
+                                
+                            <a class="nav-link active">ALL</a>
+                        </li>
 
-                        <a class="nav-link" href="#">PANORAMAS</a>
-                    </li>
+                        <li class="nav-item imag" onclick="filterSelection('panoramas')">
 
-                    <li class="nav-item">
+                            <a class="nav-link">PANORAMAS</a>
+                        </li>
 
-                        <a class="nav-link" href="#">PORTRAITS</a>
-                    </li>
+                        <li class="nav-item imag" onclick="filterSelection('portraits')">
 
-                    <li class="nav-item">
+                            <a class="nav-link">PORTRAITS</a>
+                        </li>
 
-                        <a class="nav-link" href="#">MACRO</a>
-                    </li>
+                        <li class="nav-item imag" onclick="filterSelection('macro')">
 
-                    <li class="nav-item">
+                            <a class="nav-link">MACRO</a>
+                        </li>
 
-                        <a class="nav-link" href="#">JOURNAL</a>
-                    </li>
-                </ul>
+                        <li class="nav-item imag" onclick="filterSelection('journal')">
+
+                            <a class="nav-link">JOURNAL</a>
+                        </li>
+                    </ul>
+            </div>
+
             </div>
 
             <div class="row galerie_1">
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img1.jpg" alt="photo d'un pont en S"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img2.jpg" alt="photo du toit d'un pont"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img3.jpg" alt="photo d'une île"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img4.jpg" alt="photo d'un arbre sur une île"></div>
+                <div class=" filtrage journal col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img1.jpg" alt="photo d'un pont en S"></div>
+                <div class=" filtrage journal col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img2.jpg" alt="photo du toit d'un pont"></div>
+                <div class=" filtrage macro col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img3.jpg" alt="photo d'une île"></div>
+                <div class=" filtrage macro col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img4.jpg" alt="photo d'un arbre sur une île"></div>
             </div>
 
             <div class="row galerie_2">
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img5.jpg" alt="photo d'un cabane"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img6.jpg" alt="photo d'un gars qui fait du surf"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img7.jpg" alt="photo d'une chaine de montagne"></div>
-                <div class=" col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img8.jpg" alt="photo d'une montagne"></div>
+                <div class=" filtrage portraits col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img5.jpg" alt="photo d'un cabane"></div>
+                <div class=" filtrage portraits col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img6.jpg" alt="photo d'un gars qui fait du surf"></div>
+                <div class=" filtrage panoramas col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img7.jpg" alt="photo d'une chaine de montagne"></div>
+                <div class=" filtrage panoramas col-12 col-md-6 col-lg-3"><img class="img-fluid" src="asset/image/portfolio_img8.jpg" alt="photo d'une montagne"></div>
             </div>
         </div>
     </section>
@@ -426,23 +431,23 @@
 
     <!-- ######  SECTION FOOTER  ###### -->
 
-    <!-- <footer class="container-fluid">
+    <footer class="container-fluid">
 
         <div class="container">
 
                 <nav aria-label="breadcrumb">
                         
-                    <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#r">HOME</a></li>
-                    <li class="breadcrumb-item"><a href="#">SERVICES</a></li>
-                    <li class="breadcrumb-item"><a href="#services">PORTFOLIO</a></li>
-                    <li class="breadcrumb-item"><a href="#contact">CONTACT</a></li>
+                    <ol>
+                    <li><a href="#titre_h1">HOME </a>></li>
+                    <li><a href="#services">  SERVICES </a></li>
+                    <li><a href="#feature">  PORTFOLIO </a></li>
+                    <li><a href="#contact">  CONTACT </a></li>
                     </ol>
                 </nav>
 
             <p>2013 ©</p>
         </div>
-    </footer> -->
+    </footer>
 
     
 

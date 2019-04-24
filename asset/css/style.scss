@@ -60,6 +60,8 @@
 }
 
 body{
+
+    /*  ######  HEADER  ######  */
     header{
 
         background-image: url("../image/background_header.jpg");
@@ -104,6 +106,7 @@ body{
                         font-weight: 700;
                         border: solid 1px transparent;
                     }
+
                     a:hover{
 
                         border: 1px solid #4BCAFF;
@@ -118,6 +121,7 @@ body{
                 }
             }
         }
+
         .titre_principal{
 
             display: flex;
@@ -212,6 +216,7 @@ body{
             font-weight: 500;
             padding-top: 18px;
         }
+
         h3{
             font-family: 'Segoe UI', sans-serif;
             font-size: 24px;
@@ -243,7 +248,6 @@ body{
             font-size: 30px;
             font-weight: 300;
             font-family: 'Segoe UI', sans-serif;
-           
         }
     }
 
@@ -259,11 +263,34 @@ body{
             .galerie_1{
 
                 padding-bottom: 30px;
+                .filtrage {
+                    float: left;
+                    width: 33.33%;
+                    display: none; /* Hide columns by default */
+                }
+                    
+                    .show {
+                    display: block;
+                }
+            }
+
+            .galerie_2{
+
+                .filtrage {
+                    float: left;
+                    width: 33.33%;
+                    display: none; /* Hide columns by default */
+                    }
+                    
+                    .show {
+                    display: block;
+                    }
             }
 
             @include for-extra-small-devices{
 
                 .galerie_1{
+
                     
                     div{
 
@@ -274,6 +301,8 @@ body{
                 }
 
                 .galerie_2{
+
+                    
 
                     div{
 
@@ -305,7 +334,6 @@ body{
                         text-align: center;
                     }
                 }
-
             }
 
             @include  for-medium-devices{
@@ -330,7 +358,6 @@ body{
                     }
                 }
             }
-            
 
             #features_nav{
 
@@ -354,37 +381,53 @@ body{
                             display: none;
                         }
                     }
-                }
 
-                ul{
+                    @include for-small-devices{
 
+                        hr{
 
-                    li{
-
-                        a{
-                            text-decoration: none;
-                            color: black;
-                            font-size: 14px;
-                            font-weight: 700;
-                            border: solid 1px transparent;
-                        }
-
-                        a:hover{
-
-                            border: 1px solid #4BCAFF;
-                            color: #4BCAFF!important;
-                        }
-
-                        @include for-extra-small-devices{
-
-                            a{
-
-                                font-size: 10px;
-                            }
+                            display: none;
                         }
                     }
                 }
 
+                #li-container{
+                    ul{
+
+                        li{
+
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                font-size: 14px;
+                                font-weight: 700;
+                                border: solid 1px transparent;
+                            }
+
+                            a:hover{
+
+                                border: 1px solid #4BCAFF;
+                                color: #4BCAFF!important;
+                            }
+
+                            @include for-extra-small-devices{
+
+                                a{
+
+                                    font-size: 10px;
+                                }
+                            }
+
+                            @include for-small-devices{
+
+                                a{
+
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             @include for-extra-small-devices{
@@ -472,6 +515,7 @@ body{
             font-family: 'Segoe UI', sans-serif;
             font-size: 14px;
             border-color: black;
+            padding: 5px 30px;
         }
 
         .container{
@@ -493,13 +537,7 @@ body{
 
                     .video{
                        
-                        // padding-top: 30px;
                         margin-top: 25px;
-
-                        // object{
-
-                        //    margin: auto;
-                        // }
                     }
                 }
             }
@@ -523,7 +561,6 @@ body{
                 font-family: 'Segoe UI', sans-serif;
                 font-size: 28px;
                 font-weight: 300;
-
             }
 
             @include for-extra-small-devices{
@@ -537,7 +574,6 @@ body{
 
                 display: flex;
                 justify-content: space-between;
-                
 
                 h2{
 
@@ -546,7 +582,6 @@ body{
                     font-weight: 300;
                     color: white;
                 }
-
 
                 hr{
                     
@@ -627,10 +662,6 @@ body{
                                 border: 1px solid #4BCAFF;
                                 color: #4BCAFF!important;
                             }
-
-                            
-
-                            
                         }
 
                     }
@@ -642,8 +673,6 @@ body{
                             width: 100%;
                         }
                     }
-
-                    
                 }
             }
         }
@@ -669,7 +698,6 @@ body{
                     font-weight: 300;
                     font-size: 30px;
                 }
-
             }
 
             p{
@@ -711,7 +739,6 @@ body{
             font-size: 30px;
             font-weight: 300;
             font-family: 'Segoe UI', sans-serif;
-           
         }
 
         .container{
@@ -754,7 +781,6 @@ body{
             ul{
 
                 padding-left: 0;
-
             }
 
             @include for-extra-small-devices{
@@ -770,7 +796,6 @@ body{
                 p, ul{
 
                     display: none;
-
                 }
             }
 
@@ -779,49 +804,47 @@ body{
                 p, ul{
 
                     display: none;
-
                 }
-
             }
         }
     }
 
     /* ######  SECTION FOOTER  ######  */
 
-    // footer{
+    footer{
 
-    //     background-color: rgb(40, 40, 40);
-    //     color: rgb(75, 88, 96);
+        background-color: rgb(40, 40, 40);
+        color: rgb(75, 88, 96);
+        height: 170px;
 
-    //     div{
+        div{
 
-    //         display: flex;
-    //         justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
+            padding: 65px 0;
 
-    //         ol{
+            ol{
 
-    //             li:nth-child(2)::before,
-    //             li:nth-child(3)::before,
-    //             li:nth-child(4)::before {
-    //                 content: $breadcrumb-divider;
-    //             }
+                display: flex;
+                justify-content: space-around;
+                
+                li{
 
-    //             display: flex;
-    //             justify-content: space-between;
+                    list-style: none;
 
-    //             li{
+                    a{
 
-    //                 list-style: none;
-                    
+                        color: rgb(75, 88, 96);
+                        text-decoration: none!important;
+                        padding-right: 15px!important;
+                    }
 
-    //                 a{
+                    a:hover{
 
-    //                     color: rgb(75, 88, 96);
-                        
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
+                        color: #4BCAFF!important;
+                    }
+                }
+            }
+        }
+    }
 }
