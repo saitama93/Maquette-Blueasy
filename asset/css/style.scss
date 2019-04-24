@@ -50,12 +50,7 @@
     @mixin for-large-devices {
 
     @media (min-width: 992px) and (max-width: 1199px) { @content; }
-    }
-
-   
-/*  ######  VARIABLES  ######  */
-
-$breadcrumb-divider: quote("|");
+}
 
 /*  ######  MESSAGE D'ERREUR FORMULAIRE  ######  */
 

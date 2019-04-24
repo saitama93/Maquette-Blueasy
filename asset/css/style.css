@@ -15,7 +15,6 @@
   font-family: 'Segeo UI';
   src: url("../font/Segoe UI Light.woff"); }
 /*  ###### MIXIN  ######  */
-/*  ######  VARIABLES  ######  */
 /*  ######  MESSAGE D'ERREUR FORMULAIRE  ######  */
 #errorName, #errorMail, #errorMessage, #errorSubmit {
   color: red; }
